@@ -1,3 +1,4 @@
+import React from 'react'; // <-- ADD THIS LINE
 import QuizContainer from './components/QuizContainer';
 
 function App() {
