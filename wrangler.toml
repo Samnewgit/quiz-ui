@@ -1,0 +1,11 @@
+# This is a configuration file for Cloudflare's command-line tool, Wrangler.
+# Cloudflare Pages uses this file to get its build instructions.
+
+name = "quiz-ui" # You can change this to your project name
+compatibility_date = "2024-08-06" # Use today's date
+
+[pages_build_config]
+# Command to build your project
+build_command = "npm run build"
+# The directory of build output.
+destination_dir = "dist"
