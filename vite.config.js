@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()], // Ensure this is just `react()` and not `react({ jsxRuntime: 'classic' })`
+  // Tell the plugin to use the 'classic' JSX runtime
+  plugins: [
+    react({
+      jsxRuntime: 'classic'
+    })
+  ],
 })
